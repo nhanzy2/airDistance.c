@@ -23,9 +23,8 @@
  Lon1 = Lon1 / 180/M_PI;
  Lat2 = Lat2 / 180/M_PI;
  Lon2 = Lon2 / 180/M_PI;
-  
-L = sin(Lat1)*sin(Lon1)+cos(Lat1)*cos(Lon1)*cos(Lat2-Lon2) * R;
-Dist = (L);
+
+ Dist = acos(sin(Lat1)sin(Lat2)+cos(Lat1)cos(Lat2)cos(Lon2-Lon1)) * R;
  
 printf("%lf",Dist);
 
