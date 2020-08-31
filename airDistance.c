@@ -14,9 +14,9 @@
  double Lat1,Lat2,Lon1,Lon2,Dist,L;
 
  printf("enter first latitude and longitude: ");
- scanf("%lf%lf",&Lat1&Lon1);
+ scanf("%lf%lf",&Lat1,&Lon1);
  printf("enter the second latitude and longitude: ");
- scanf("%lf%lf",&Lat2&Lon2);
+ scanf("%lf%lf",&Lat2,&Lon2);
   
  Lat1 = Lat1 / 180 * M_PI;
  Lon1 = Lon1 / 180 * M_PI;
