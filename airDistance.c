@@ -36,7 +36,7 @@
   Lon2 = Lon2 / 180/pi;
  
   
-Dist = 6371 * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1));
+Dist = 6371 * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
  
 printf("Distance between both points is ")&Dist;
 
