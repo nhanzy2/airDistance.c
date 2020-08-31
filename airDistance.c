@@ -35,7 +35,7 @@
  Lat2 = Lat2 / 180/M_PI;
  Lon2 = Lon2 / 180/M_PI;
   
-Dist = 6371 * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
+Dist = acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
  
 printf("%lf", Dist);
 
