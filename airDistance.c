@@ -18,10 +18,10 @@
  printf("enter the second latitude and longitude: ");
  scanf("%lf%lf",&Lat2,&Lon2);
   
- Lat1 = Lat1 / 180 * M_PI;
- Lon1 = Lon1 / 180 * M_PI;
- Lat2 = Lat2 / 180 * M_PI;
- Lon2 = Lon2 / 180 * M_PI;
+ Lat1 = Lat1 / 180/M_PI;
+ Lon1 = Lon1 / 180/M_PI;
+ Lat2 = Lat2 / 180/M_PI;
+ Lon2 = Lon2 / 180/M_PI;
   
 L = sin(Lat1)*sin(Lon1)+cos(Lat1)*cos(Lon1)*cos(Lat2-Lon2);
 Dist = 3963*acos(L);
