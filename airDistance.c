@@ -16,7 +16,7 @@
  double Lat2;
  double Lon1;
  double Lon2;
-
+ R = 6371
 
  printf("Enter Lat1:");
  scanf("%lf", &Lat1);
@@ -30,12 +30,12 @@
  printf("Enter Lon2:");
  scanf("%lf", &Lon2);
   
- Lat1 = Lat1 / 180/M_PI;
- Lon1 = Lon1 / 180/M_PI;
- Lat2 = Lat2 / 180/M_PI;
- Lon2 = Lon2 / 180/M_PI;
+ Lat1 = Lat1 / 180 * M_PI;
+ Lon1 = Lon1 / 180 * M_PI;
+ Lat2 = Lat2 / 180 * M_PI;
+ Lon2 = Lon2 / 180 * M_PI;
   
-Dist = acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
+Dist = R * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
  
 printf("%lf", Dist);
 
