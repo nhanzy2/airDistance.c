@@ -18,16 +18,16 @@
  double Lon2;
 
  printf("Enter Lat1:");
- scanf("%lf", &Lat1);
+ scanf("%lf", Double&Lat1);
 
  printf("Enter Lon1:");
- scanf("%lf" &Lon1);
+ scanf("%lf" Double&Lon1);
 
  printf("Enter Lat2:");
- scanf("%lf" &Lat2);
+ scanf("%lf" Double&Lat2);
 
  printf("Enter Lon2:");
- scanf("%lf" &Lon2);
+ scanf("%lf" Double&Lon2);
   
   Lat1 = Lat1 / 180/pi;
   Lat2 = Lat2 / 180/pi;
@@ -35,9 +35,9 @@
   Lon2 = Lon2 / 180/pi;
  
   
-Dist, d = 6,371 * arccos[(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(lat2) * cos(Lon2-Lon1)]
+Dist = 6371 * acos[(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1)];
  
- printf("Distance between both points is ")&Dist;
+printf("Distance between both points is ")&Dist;
 
 
 
