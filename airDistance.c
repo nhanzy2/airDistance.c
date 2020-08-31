@@ -9,7 +9,7 @@
  #include <stdio.h>
  #include <math.h>
 
- int main (int argc, char **argb){
+ int main (int argc, char **argv){
 
  double Dist;
  double Lat1;
