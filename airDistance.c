@@ -16,18 +16,19 @@
  double Lat2;
  double Lon1;
  double Lon2;
+ double pi = 4.0 * atan(1.0);
 
  printf("Enter Lat1:");
- scanf("%lf", Double&Lat1);
+ scanf("%lf", double&Lat1);
 
  printf("Enter Lon1:");
- scanf("%lf" Double&Lon1);
+ scanf("%lf" double&Lon1);
 
  printf("Enter Lat2:");
- scanf("%lf" Double&Lat2);
+ scanf("%lf" double&Lat2);
 
  printf("Enter Lon2:");
- scanf("%lf" Double&Lon2);
+ scanf("%lf" double&Lon2);
   
   Lat1 = Lat1 / 180/pi;
   Lat2 = Lat2 / 180/pi;
