@@ -12,7 +12,6 @@
  int main (int argc, char **argv){
 
  double Lat1,Lat2,Lon1,Lon2,Dist,L;
- int R = 6371;
 
  printf("enter first latitude and longitude: ");
  scanf("%lf%lf",&Lat1&Lon1);
