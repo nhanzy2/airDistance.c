@@ -11,34 +11,23 @@
 
  int main (int argc, char **argv){
 
- double Dist;
- double Lat1;
- double Lat2;
- double Lon1;
- double Lon2;
+ double Lat1,Lat2,Lon1,Lon2,Dist,L;
  int R = 6371;
 
- printf("Enter Lat1:");
- scanf("%lf", &Lat1);
-
- printf("Enter Lon1:");
- scanf("%lf", &Lon1);
-
- printf("Enter Lat2:");
- scanf("%lf", &Lat2);
-
- printf("Enter Lon2:");
- scanf("%lf", &Lon2);
+ printf("enter first latitude and longitude: ");
+ scanf("%lf%lf",&Lat1&Lon1);
+ printf("enter the second latitude and longitude: ");
+ scanf("%lf%lf",&Lat2&Lon2);
   
  Lat1 = Lat1 / 180 * M_PI;
  Lon1 = Lon1 / 180 * M_PI;
  Lat2 = Lat2 / 180 * M_PI;
  Lon2 = Lon2 / 180 * M_PI;
   
-Dist = R * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
+L = sin(Lat1)*sin(Lon1)+cos(Lat1)*cos(Lon1)*cos(Lat2-Lon2);
+Dist = 3963*acos(L);
  
-printf("%lf", Dist);
-
+printf("%lf",Dist);
 
 return 0;
  }
