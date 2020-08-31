@@ -16,7 +16,7 @@
  double Lat2;
  double Lon1;
  double Lon2;
- R = 6371
+ int R = 6371;
 
  printf("Enter Lat1:");
  scanf("%lf", &Lat1);
