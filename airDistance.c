@@ -38,7 +38,7 @@
   
 Dist = 6371 * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
  
-printf("%lf Dist",KMS);
+printf("%lf Dist");
 
 
 
