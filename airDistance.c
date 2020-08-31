@@ -19,20 +19,20 @@
  double pi = 4.0 * atan(1.0);
 
  printf("Enter Lat1:");
- scanf("%lf", &Lat1);
+ scanf("%lf", &Lat1 / 180/pi);
 
  printf("Enter Lon1:");
- scanf("%lf", &Lon1);
+ scanf("%lf", &Lon1 / 180/pi);
 
  printf("Enter Lat2:");
- scanf("%lf", &Lat2);
+ scanf("%lf", &Lat2 / 180/pi);
 
  printf("Enter Lon2:");
- scanf("%lf", &Lon2);
+ scanf("%lf", &Lon2 / 180/pi);
   
  
   
-Dist = 6371 * acos[(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1)];
+Dist = 6371 * acos(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(Lat2) * cos(Lon2-Lon1);
  
 printf("%lf", Dist);
 
