@@ -29,7 +29,9 @@
  printf("Enter Lon2:");
  scanf("%lf" &Lon2);
 
-
+Dist, d = 6,371 * arccos[(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(lat2) * cos(Lon2-Lon1)]
+ 
+ printf("
 
 
 
