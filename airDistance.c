@@ -28,10 +28,16 @@
 
  printf("Enter Lon2:");
  scanf("%lf" &Lon2);
-
+  
+  Lat1 = Lat1 / 180/pi;
+  Lat2 = Lat2 / 180/pi;
+  Lon1 = Lon1 / 180/pi;
+  Lon2 = Lon2 / 180/pi;
+ 
+  
 Dist, d = 6,371 * arccos[(sin(Lat1)*sin(Lat2)) + cos(Lat1) * cos(lat2) * cos(Lon2-Lon1)]
  
- printf("
+ printf("Distance between both points is ")&Dist;
 
 
 
