@@ -22,13 +22,13 @@
  scanf("%lf", &Lat1);
 
  printf("Enter Lon1:");
- scanf("%lf" &Lon1);
+ scanf("%lf", &Lon1);
 
  printf("Enter Lat2:");
- scanf("%lf" &Lat2);
+ scanf("%lf", &Lat2);
 
  printf("Enter Lon2:");
- scanf("%lf" &Lon2);
+ scanf("%lf", &Lon2);
   
   Lat1 = Lat1 / 180/pi;
   Lat2 = Lat2 / 180/pi;
