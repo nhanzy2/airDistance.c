@@ -1,5 +1,5 @@
 /**
- * Author: Nathan Hanzy
+ * Author: Nathan Hanzy, Blake Sudbeck
  * Date: 2020/08/27
  *
  * A program to calculate distance between two points
